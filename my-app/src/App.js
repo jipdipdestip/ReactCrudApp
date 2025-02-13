@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderComponent from './HeaderComponent';
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <HeaderComponent />
+    </div>
   );
 }
 
