@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from 'next/navigation';
 import './EditUser.css';
+import Header from '../components/Header/Header';
 
 function EditUser() {
     const searchParams = useSearchParams();
@@ -34,6 +35,8 @@ function EditUser() {
 
     return (
         <div>
+            <Header />
+            <div className="container">
             <h2>Edit User</h2>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -44,6 +47,7 @@ function EditUser() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
+                        maxLength={50}
                     />
                 </div>
                 <div>
@@ -54,6 +58,7 @@ function EditUser() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        maxLength={50}
                     />
                 </div>
                 <div>
@@ -64,10 +69,12 @@ function EditUser() {
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         required
+                        maxLength={16}
                     />
                 </div>
                 <button type="submit">Update User</button>
             </form>
+            </div>
         </div>
     );
 }

@@ -31,3 +31,41 @@
   font-weight: bold;
   color: #555;
 }
+
+.edit-button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 500ms;
+}
+
+.edit-button:hover{
+  background-color: #367c39;
+}
+
+.delete-button{
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 500ms;
+}
+
+.delete-button:hover{
+  background-color: #c62828;
+}

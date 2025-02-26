@@ -29,15 +29,15 @@ function AddUser() {
                 <form onSubmit={handleSubmit}>
                     <label>
                         Name:
-                        <input type="text" name="name" id='name' value={name} onChange={(e) => setName(e.target.value)} />
+                        <input type="text" name="name" id='name' value={name} onChange={(e) => setName(e.target.value)} maxLength={50} required />
                     </label>
                     <label>
                         Email:
-                        <input type="email" name="email" id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" name="email" id='email' value={email} onChange={(e) => setEmail(e.target.value)} maxLength={50} required />
                     </label>
                     <label>
                         Phone:
-                        <input type="tel" name="phone" id='phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
+                        <input type="tel" name="phone" id='phone' value={phone} onChange={(e) => setPhone(e.target.value)} maxLength={16} required />
                     </label>
                     <button type="submit">Add</button>
                 </form>
