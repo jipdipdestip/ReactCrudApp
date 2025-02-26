@@ -1,0 +1,33 @@
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-item {
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-detail {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-detail span {
+  font-weight: bold;
+  color: #555;
+}
