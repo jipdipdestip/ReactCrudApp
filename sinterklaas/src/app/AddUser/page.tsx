@@ -29,7 +29,7 @@ function AddUser() {
                 <form onSubmit={handleSubmit}>
                     <label>
                         Name:
-                        <input type="text" name="name" id='name' value={name} onChange={(e) => setName(e.target.value)} maxLength={50} required />
+                        <input type="text " name="name" id='name' value={name} onChange={(e) => setName(e.target.value)} maxLength={50} required />
                     </label>
                     <label>
                         Email:
